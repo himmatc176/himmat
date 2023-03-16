@@ -33,6 +33,18 @@ ewt.track({name:"page",type:"pagetype"});
 ewt.track({name:"chapter",type:"chapter"});
 }
 </script>
+	<script type="text/javascript"> 
+    function customLoad() {  
+    ewt.track({name:'chapter',type:'chapter'}); 
+    }
+    if (document.readyState === "complete") {
+       customLoad();
+    } else if (window.addEventListener) {
+       window.addEventListener('load', customLoad, false);
+    } else if (window.attachEvent) {
+       window.attachEvent('onload', customLoad);
+    } else window.onload = customLoad;
+</script>
 </head>
 	<body>
 		<!-- Google Tag Manager (noscript) -->
@@ -42,7 +54,7 @@ ewt.track({name:"chapter",type:"chapter"});
 		
 		<p>&nbsp;</p>
 		<p>
-		See our offers for a flight to Mauritius: Himmat Kumar Changed GTM TAG NEW6
+		See our offers for a flight to Mauritius: Himmat Kumar Changed GTM TAG NEW7
 		<a href="http://himmatc176.github.io/Anchortag.html" >Link</a>
 		<a href="Anchortag.html" target='_self'>Confirm Purchase for conversion tracking via javascript call</a>
 		<br><br><br>
